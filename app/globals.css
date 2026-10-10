@@ -1,0 +1,41 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-exo), sans-serif;
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+::selection {
+  background: rgba(16, 185, 129, 0.2);
+  color: #0f172a;
+}
+
+.hero-swiper .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background-color: #FFFFFF80;
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+
+.hero-swiper .swiper-pagination-bullet-active {
+  width: 25px;
+  border-radius: 999px;
+  background-color: #FFFFFF;
+  opacity: 1;
+}
+
+.thumbs-swiper .swiper-slide-thumb-active div {
+  border-color: #2563eb;
+}
+
+.footer-link {
+  @apply text-gray-400 hover:text-emerald-400 transition-colors text-sm;
+}
